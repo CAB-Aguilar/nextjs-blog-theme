@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextilPro - Sistema de Gestión de Producción Textil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Pantalla de Inicio de Sesión -->
+        <div id="login-screen" class="screen">
+            <!-- El contenido de login será cargado dinámicamente -->
+        </div>
+
+        <!-- Sidebar y Contenido Principal -->
+        <div id="main-container" class="hidden">
+            <!-- Sidebar -->
+            <div id="sidebar-container"></div>
+            
+            <!-- Contenido Principal -->
+            <div class="main-content">
+                <!-- Header -->
+                <div id="header-container"></div>
+                
+                <!-- Contenido dinámico por secciones -->
+                <div class="content-wrapper" id="content-container">
+                    <!-- Las secciones serán cargadas dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mensaje de éxito (Toast) -->
+    <div class="toast-container">
+        <div id="success-toast" class="toast">
+            <div class="toast-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast-message">
+                <span>Operación realizada con éxito</span>
+            </div>
+            <div class="toast-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loader/Spinner para operaciones -->
+    <div id="loader">
+        <div class="spinner"></div>
+        <p>Procesando...</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    
+    <!-- Configuración y utilidades -->
+    <script src="public/js/config.js"></script>
+    <script src="public/js/utils/helpers.js"></script>
+    <script src="public/js/utils/formatters.js"></script>
+    <script src="public/js/utils/validators.js"></script>
+    
+    <!-- Componentes -->
+    <script src="public/js/components/charts.js"></script>
+    <script src="public/js/components/modals.js"></script>
+    <script src="public/js/components/tables.js"></script>
+    <script src="public/js/components/forms.js"></script>
+    <script src="public/js/components/notifications.js"></script>
+    
+    <!-- Módulos -->
+    <script src="public/js/modules/auth.js"></script>
+    <script src="public/js/modules/dashboard.js"></script>
+    <script src="public/js/modules/inventory.js"></script>
+    <script src="public/js/modules/production.js"></script>
+    <script src="public/js/modules/settings.js"></script>
+    <script src="public/js/modules/reports.js"></script>
+    <script src="public/js/modules/analysis.js"></script>
+    <script src="public/js/modules/kpis.js"></script>
+    <script src="public/js/modules/machines.js"></script>
+    <script src="public/js/modules/fabrics.js"></script>
+    <script src="public/js/modules/operators.js"></script>
+    <script src="public/js/modules/assignments.js"></script>
+    
+    <!-- Script principal -->
+    <script src="public/js/main.js"></script>
+</body>
+</html>
